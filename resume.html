@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — Koushik Reddy Kalava</title>
+  <meta name="description" content="Download Koushik Reddy Kalava's resume — Operations & Innovation Systems Architect." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">Koushik<span>.</span></a>
+    <div class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Systems</a>
+      <a href="skills.html">Skills</a>
+      <a href="writing.html">Writing</a>
+      <a href="contact.html" class="nav__cta">Contact</a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav__mobile" id="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="experience.html">Experience</a>
+  <a href="projects.html">Systems &amp; Projects</a>
+  <a href="skills.html">Skills &amp; Tools</a>
+  <a href="writing.html">Writing</a>
+  <a href="resume.html">Resume</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="label fade-in">Resume</div>
+      <h1 class="fade-in">Koushik Reddy Kalava</h1>
+      <p class="fade-in fade-in-delay-1">Operations &amp; Innovation Systems Architect · Digital Transformation · Workflow Automation · AI-Enabled Systems</p>
+      <div class="fade-in fade-in-delay-2" style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="resume.pdf" download class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Download Resume
+        </a>
+        <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- PDF Viewer -->
+      <div class="resume-viewer fade-in" id="pdf-viewer">
+        <div class="resume-placeholder" id="resume-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+            <polyline points="14,2 14,8 20,8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+            <polyline points="10,9 9,9 8,9"/>
+          </svg>
+          <h3 style="margin-bottom:8px;color:var(--muted);font-size:1rem;">Resume PDF</h3>
+          <p style="font-size:0.875rem;margin-bottom:24px;">Add your resume.pdf file to this folder to display it here.</p>
+          <a href="resume.pdf" class="btn btn-outline" style="font-size:0.8rem;padding:8px 18px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            Download PDF
+          </a>
+        </div>
+      </div>
+
+      <!-- Resume content summary -->
+      <div style="margin-top:64px;">
+        <div class="section-header fade-in">
+          <div class="label">Quick Overview</div>
+          <h2>At a glance</h2>
+        </div>
+
+        <div class="grid-3">
+          <div class="card fade-in">
+            <div class="label" style="margin-bottom:8px;">Current Focus</div>
+            <h3 style="margin-bottom:8px;">Innovation &amp; Operations Systems</h3>
+            <p>Designing and deploying enterprise platforms that operationalize innovation, automate workflows, and embed AI into business execution.</p>
+          </div>
+          <div class="card fade-in fade-in-delay-1">
+            <div class="label" style="margin-bottom:8px;">Expertise</div>
+            <h3 style="margin-bottom:8px;">End-to-End Systems</h3>
+            <p>From strategy and process design to technical implementation and change management — operating across the full systems lifecycle.</p>
+          </div>
+          <div class="card fade-in fade-in-delay-2">
+            <div class="label" style="margin-bottom:8px;">Domain</div>
+            <h3 style="margin-bottom:8px;">Enterprise Operations</h3>
+            <p>5+ years building systems across digital transformation, CRM, workflow automation, and AI-enabled operations in enterprise environments.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <span class="footer__copy">© 2025 Koushik Reddy Kalava</span>
+      <div class="footer__links">
+        <a href="https://linkedin.com/in/koushikreddy" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:hello@koushikreddy.com">Email</a>
+        <a href="resume.html">Resume</a>
+        <a href="https://github.com/koushikreddy" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  // Try to load the PDF inline if it exists
+  const viewer = document.getElementById('pdf-viewer');
+  const placeholder = document.getElementById('resume-placeholder');
+  const pdfUrl = 'resume.pdf';
+
+  fetch(pdfUrl, { method: 'HEAD' })
+    .then(res => {
+      if (res.ok) {
+        placeholder.style.display = 'none';
+        const embed = document.createElement('embed');
+        embed.src = pdfUrl;
+        embed.type = 'application/pdf';
+        embed.style.cssText = 'width:100%;height:800px;border:none;';
+        viewer.appendChild(embed);
+      }
+    })
+    .catch(() => {});
+</script>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Systems &amp; Projects — Koushik Reddy Kalava</title>
+  <meta name="description" content="Enterprise systems, internal platforms, automation workflows, and future concepts built by Koushik Reddy Kalava." />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .projects-filter {
+      display: flex; gap: 8px; flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .filter-btn {
+      font-size: 0.75rem; font-weight: 600; padding: 7px 14px;
+      border: 1px solid var(--border); border-radius: 100px;
+      color: var(--muted); background: none;
+      transition: all 0.2s; cursor: pointer; font-family: var(--font);
+    }
+    .filter-btn:hover, .filter-btn.active {
+      border-color: var(--text); color: var(--text); background: var(--warm);
+    }
+    .projects-section-label {
+      font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--muted);
+      padding: 12px 0; border-bottom: 1px solid var(--border);
+      margin-bottom: 24px; margin-top: 56px;
+    }
+    .projects-section-label:first-of-type { margin-top: 0; }
+  </style>
+</head>
+<body>
+
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">Koushik<span>.</span></a>
+    <div class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Systems</a>
+      <a href="skills.html">Skills</a>
+      <a href="writing.html">Writing</a>
+      <a href="contact.html" class="nav__cta">Contact</a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav__mobile" id="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="experience.html">Experience</a>
+  <a href="projects.html">Systems &amp; Projects</a>
+  <a href="skills.html">Skills &amp; Tools</a>
+  <a href="writing.html">Writing</a>
+  <a href="resume.html">Resume</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="label fade-in">Systems &amp; Projects</div>
+      <h1 class="fade-in">The systems I've designed,<br />built, and deployed.</h1>
+      <p class="fade-in fade-in-delay-1">Enterprise platforms, internal tools, automation workflows, and future concepts — each built to solve a real operational problem.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- ── ENTERPRISE SYSTEMS ────────────────────────────── -->
+      <div class="projects-section-label fade-in">Enterprise Systems</div>
+      <div style="display:flex;flex-direction:column;gap:20px;">
+
+        <div class="project-card fade-in">
+          <div class="project-card__header">
+            <div>
+              <div class="project-card__category">Enterprise Platform</div>
+              <div class="project-card__title">HYPE Innovation Management Platform</div>
+            </div>
+            <span class="project-card__badge">Deployed</span>
+          </div>
+          <div class="project-card__grid">
+            <div class="project-card__field">
+              <label>Problem</label>
+              <p>The organization had no structured system to capture, evaluate, or track innovation initiatives. Ideas were lost in email chains and informal conversations with no accountability or lifecycle management.</p>
+            </div>
+            <div class="project-card__field">
+              <label>System Design</label>
+              <p>Implemented HYPE as the enterprise innovation platform — configuring submission workflows, evaluation criteria, lifecycle stages, and stakeholder notification systems aligned to the organization's innovation process.</p>
+            </div>
+            <div class="project-card__field">
+              <label>Outcome</label>
+              <p>Enterprise-wide innovation pipeline with structured submission, multi-stage evaluation, and full lifecycle tracking — enabling leadership to see the innovation portfolio in real time.</p>
+            </div>
+            <div class="project-card__field">
+              <label>Learnings</label>
+              <p>Change management and training were as critical as technical configuration. Adoption required ongoing stakeholder engagement beyond the initial launch.</p>
+            </div>
+          </div>
+          <div class="project-card__stack">
+            <span class="tag">HYPE</span>
+            <span class="tag">Process Design</span>
+            <span class="tag">Change Management</span>
+            <span class="tag">Stakeholder Management</span>
+            <span class="tag">Innovation Operations</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-card__header">
+            <div>
+              <div class="project-card__category">CRM System</div>
+              <div class="project-card__title">Salesforce CRM Transformation</div>
+            </div>
+            <span class="project-card__badge">Deployed</span>
+          </div>
+          <div class="project-card__grid">
+            <div class="project-card__field">
+              <label>Problem</label>
+              <p>Salesforce was implemented but underutilized — low adoption, poor data quality, and no standardized processes. Sales teams maintained their own spreadsheet pipelines outside the system.</p>
+            </div>
+            <div class="project-card__field">
+              <label>System Design</label>
+              <p>Redesigned Salesforce configuration from the user backwards — simplifying fields, standardizing pipeline stages, automating data entry tasks, and building dashboards that made the CRM genuinely useful to reps.</p>
+            </div>
+            <div class="project-card__field">
+              <label>Outcome</label>
+              <p>Measurable increase in CRM adoption, improved data quality, and pipeline visibility that enabled more accurate forecasting at the leadership level.</p>
+            </div>
+            <div class="project-card__field">
+              <label>Learnings</label>
+              <p>CRM transformation is a UX problem as much as a technical one. The friction of data entry was the root cause of low adoption — not lack of features.</p>
+            </div>
+          </div>
+          <div class="project-card__stack">
+            <span class="tag">Salesforce</span>
+            <span class="tag">CRM Design</span>
+            <span class="tag">Process Redesign</span>
+            <span class="tag">RevOps</span>
+            <span class="tag">Training</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ── INTERNAL PLATFORMS ────────────────────────────── -->
+      <div class="projects-section-label fade-in">Internal Platforms</div>
+      <div style="display:flex;flex-direction:column;gap:20px;">
+
+        <div class="project-card fade-in">
+          <div class="project-card__header">
+            <div>
+              <div class="project-card__category">Internal Tool</div>
+              <div class="project-card__title">Power Apps Project Management System</div>
+            </div>
+            <span class="project-card__badge">Deployed</span>
+          </div>
+          <div class="project-card__grid">
+            <div class="project-card__field">
+              <label>Problem</label>
+              <p>Project status was tracked in scattered spreadsheets across teams. No centralized view, no ownership accountability, and no way for leadership to get a cross-team portfolio view.</p>
+            </div>
+            <div class="project-card__field">
+              <label>System Design</label>
+              <p>Built a custom Power Apps application integrated with SharePoint as the data layer. Designed role-based views for contributors, managers, and executives — each seeing the information relevant to their context.</p>
+            </div>
+            <div class="project-card__field">
+              <label>Outcome</label>
+              <p>Single source of truth for project portfolio management — with real-time status tracking, ownership assignment, and automated progress reporting to leadership.</p>
+            </div>
+            <div class="project-card__field">
+              <label>Learnings</label>
+              <p>The most critical design decision was the executive view — simplifying complex project data into a single-screen portfolio summary that enabled faster decisions.</p>
+            </div>
+          </div>
+          <div class="project-card__stack">
+            <span class="tag">Power Apps</span>
+            <span class="tag">SharePoint</span>
+            <span class="tag">Power Automate</span>
+            <span class="tag">Microsoft 365</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-card__header">
+            <div>
+              <div class="project-card__category">Developer Tool</div>
+              <div class="project-card__title">Outlook Query Builder Add-in</div>
+            </div>
+            <span class="project-card__badge">Deployed</span>
+          </div>
+          <div class="project-card__grid">
+            <div class="project-card__field">
+              <label>Problem</label>
+              <p>Teams were manually building complex email queries — copying templates, filling variables, formatting content — a process that was error-prone and consumed significant daily time.</p>
+            </div>
+            <div class="project-card__field">
+              <label>System Design</label>
+              <p>Built a custom Outlook add-in using Office.js that provides a structured query-building interface directly in Outlook — generating correctly formatted email content from dynamic input fields.</p>
+            </div>
+            <div class="project-card__field">
+              <label>Outcome</label>
+              <p>Eliminated manual query formatting — reducing per-query time and removing a major source of formatting errors from outbound communications.</p>
+            </div>
+            <div class="project-card__field">
+              <label>Learnings</label>
+              <p>Tools embedded directly in existing workflows see dramatically higher adoption than standalone tools that require context switching.</p>
+            </div>
+          </div>
+          <div class="project-card__stack">
+            <span class="tag">Office.js</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">Outlook Add-in</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ── AUTOMATION SYSTEMS ─────────────────────────────── -->
+      <div class="projects-section-label fade-in">Automation Systems</div>
+      <div style="display:flex;flex-direction:column;gap:20px;">
+
+        <div class="project-card fade-in">
+          <div class="project-card__header">
+            <div>
+              <div class="project-card__category">Workflow Automation</div>
+              <div class="project-card__title">Want Brief Automation System</div>
+            </div>
+            <span class="project-card__badge">Deployed</span>
+          </div>
+          <div class="project-card__grid">
+            <div class="project-card__field">
+              <label>Problem</label>
+              <p>Brief creation was entirely manual — no standard format, no automated handoff, and no visibility into brief status across the review and approval process.</p>
+            </div>
+            <div class="project-card__field">
+              <label>System Design</label>
+              <p>Designed end-to-end automation using Power Automate: structured intake form → automatic brief generation from template → multi-stage approval routing → automated notifications and version control via SharePoint.</p>
+            </div>
+            <div class="project-card__field">
+              <label>Outcome</label>
+              <p>Standardized brief format, automated approval routing, and full audit trail — reducing brief cycle time significantly while improving brief quality and consistency.</p>
+            </div>
+            <div class="project-card__field">
+              <label>Learnings</label>
+              <p>Automation succeeds when the structured format provides real value to the user — not just to the process owner. Brief standardization reduced rework for the creative team, creating pull for adoption.</p>
+            </div>
+          </div>
+          <div class="project-card__stack">
+            <span class="tag">Power Automate</span>
+            <span class="tag">Microsoft Forms</span>
+            <span class="tag">SharePoint</span>
+            <span class="tag">Email Orchestration</span>
+            <span class="tag">Approval Workflows</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-card__header">
+            <div>
+              <div class="project-card__category">Reporting Automation</div>
+              <div class="project-card__title">Automated Reporting Pipeline</div>
+            </div>
+            <span class="project-card__badge">Deployed</span>
+          </div>
+          <div class="project-card__grid">
+            <div class="project-card__field">
+              <label>Problem</label>
+              <p>Weekly reports were manually compiled from multiple data sources — a process taking 3–4 hours per week with high risk of errors and inconsistent formatting.</p>
+            </div>
+            <div class="project-card__field">
+              <label>System Design</label>
+              <p>Built automated data pipeline pulling from CRM, marketing platforms, and operational systems — aggregating into a standardized Power BI dashboard with automated weekly distribution to stakeholders.</p>
+            </div>
+            <div class="project-card__field">
+              <label>Outcome</label>
+              <p>Eliminated manual reporting effort — saving hours weekly and enabling real-time dashboard access instead of point-in-time weekly snapshots.</p>
+            </div>
+            <div class="project-card__field">
+              <label>Learnings</label>
+              <p>The hardest part was defining the "single version of the truth" — getting agreement on definitions before automating the numbers.</p>
+            </div>
+          </div>
+          <div class="project-card__stack">
+            <span class="tag">Power BI</span>
+            <span class="tag">Power Automate</span>
+            <span class="tag">Salesforce API</span>
+            <span class="tag">SharePoint</span>
+            <span class="tag">Data Pipeline</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ── FUTURE CONCEPTS ───────────────────────────────── -->
+      <div class="projects-section-label fade-in">Future Concepts</div>
+      <div style="display:flex;flex-direction:column;gap:20px;">
+
+        <div class="project-card fade-in" style="border-style: dashed;">
+          <div class="project-card__header">
+            <div>
+              <div class="project-card__category">AI Concept</div>
+              <div class="project-card__title">XI Bridge — Innovation Intelligence System</div>
+            </div>
+            <span class="project-card__badge">Concept</span>
+          </div>
+          <div class="project-card__grid">
+            <div class="project-card__field">
+              <label>Problem</label>
+              <p>Innovation teams lack real-time intelligence — no system connects internal initiative data with external market signals, competitor movements, or technology trends.</p>
+            </div>
+            <div class="project-card__field">
+              <label>System Design</label>
+              <p>Proposed AI-powered intelligence layer that bridges internal innovation pipeline data with curated external signal sources — surfacing opportunity gaps, duplicated efforts, and emerging trends in a single operational view.</p>
+            </div>
+          </div>
+          <div class="project-card__stack">
+            <span class="tag">AI/ML</span>
+            <span class="tag">Data Pipeline</span>
+            <span class="tag">Innovation Intelligence</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Concept Stage</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-in" style="border-style: dashed;">
+          <div class="project-card__header">
+            <div>
+              <div class="project-card__category">AI Concept</div>
+              <div class="project-card__title">AI Learning OS — Personal Knowledge System</div>
+            </div>
+            <span class="project-card__badge">Concept</span>
+          </div>
+          <div class="project-card__grid">
+            <div class="project-card__field">
+              <label>Problem</label>
+              <p>Knowledge workers consume vast amounts of information but lack systems to retain, connect, and activate that knowledge when it matters most.</p>
+            </div>
+            <div class="project-card__field">
+              <label>System Design</label>
+              <p>AI-powered personal knowledge management system that ingests learning inputs (articles, notes, conversations), extracts structured insights, connects related concepts, and surfaces relevant knowledge at the point of need.</p>
+            </div>
+          </div>
+          <div class="project-card__stack">
+            <span class="tag">LLM</span>
+            <span class="tag">Knowledge Graph</span>
+            <span class="tag">RAG</span>
+            <span class="tag">Personal OS</span>
+            <span class="tag">Concept Stage</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <span class="footer__copy">© 2025 Koushik Reddy Kalava</span>
+      <div class="footer__links">
+        <a href="https://linkedin.com/in/koushikreddy" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:hello@koushikreddy.com">Email</a>
+        <a href="resume.html">Resume</a>
+        <a href="https://github.com/koushikreddy" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

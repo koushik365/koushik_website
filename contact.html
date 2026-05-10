@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Koushik Reddy Kalava</title>
+  <meta name="description" content="Get in touch with Koushik Reddy Kalava for consulting, collaboration, or hiring." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">Koushik<span>.</span></a>
+    <div class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Systems</a>
+      <a href="skills.html">Skills</a>
+      <a href="writing.html">Writing</a>
+      <a href="contact.html" class="nav__cta">Contact</a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav__mobile" id="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="experience.html">Experience</a>
+  <a href="projects.html">Systems &amp; Projects</a>
+  <a href="skills.html">Skills &amp; Tools</a>
+  <a href="writing.html">Writing</a>
+  <a href="resume.html">Resume</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="label fade-in">Contact</div>
+      <h1 class="fade-in">Let's connect.</h1>
+      <p class="fade-in fade-in-delay-1">Whether it's a hiring conversation, a consulting opportunity, or a shared interest in systems and operations — I'm open to the conversation.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start;">
+
+        <!-- Contact Form -->
+        <div class="fade-in">
+          <div class="label" style="margin-bottom:24px;">Send a message</div>
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell me what you have in mind..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Links -->
+        <div class="fade-in fade-in-delay-1">
+          <div class="label" style="margin-bottom:24px;">Or reach me directly</div>
+          <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:48px;">
+
+            <a href="https://linkedin.com/in/koushikreddy" target="_blank" rel="noopener" class="contact-link">
+              <div class="contact-link__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+                  <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-link__label">LinkedIn</div>
+                <div class="contact-link__val">linkedin.com/in/koushikreddy</div>
+              </div>
+            </a>
+
+            <a href="mailto:hello@koushikreddy.com" class="contact-link">
+              <div class="contact-link__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-link__label">Email</div>
+                <div class="contact-link__val">hello@koushikreddy.com</div>
+              </div>
+            </a>
+
+            <a href="resume.html" class="contact-link">
+              <div class="contact-link__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                  <polyline points="14,2 14,8 20,8"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-link__label">Resume</div>
+                <div class="contact-link__val">View &amp; Download Resume</div>
+              </div>
+            </a>
+
+            <a href="https://github.com/koushikreddy" target="_blank" rel="noopener" class="contact-link">
+              <div class="contact-link__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-link__label">GitHub</div>
+                <div class="contact-link__val">github.com/koushikreddy</div>
+              </div>
+            </a>
+
+          </div>
+
+          <!-- Availability note -->
+          <div style="
+            background:var(--card); border:1px solid var(--border);
+            border-radius:var(--radius); padding:20px 24px;
+          ">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+              <span style="width:8px;height:8px;border-radius:50%;background:#22c55e;display:block;"></span>
+              <span style="font-size:0.8rem;font-weight:600;color:var(--text);">Open to opportunities</span>
+            </div>
+            <p style="font-size:0.8rem;">
+              Currently exploring roles in innovation operations, digital transformation, and AI-enabled systems. Open to full-time, consulting, and advisory conversations.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <span class="footer__copy">© 2025 Koushik Reddy Kalava</span>
+      <div class="footer__links">
+        <a href="https://linkedin.com/in/koushikreddy" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:hello@koushikreddy.com">Email</a>
+        <a href="resume.html">Resume</a>
+        <a href="https://github.com/koushikreddy" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
